@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import ItemCount from './ItemCount';
+
 
 const ItemListContainer=({mensaje})=> {
     return (
         <div>
-            <h1>{mensaje}</h1>
+            <ItemCount/>
         </div>
     )
 }

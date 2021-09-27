@@ -3,7 +3,6 @@
 import { Navbar,NavDropdown,Nav,Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import rbw from '../assets/img/rbw-01.png';
-import carrito from '../assets/img/carrito.png';
 import '../index.css';
 import Cardwidget from './Cardwidget';
 

@@ -26,3 +26,14 @@ img{
   width: auto;
  line-height:  auto;
 }
+.card-contenido{
+  
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.contenedor{
+  margin:20px 30px;
+ padding: 10px;
+}
