@@ -1,6 +1,7 @@
 
-
+import React from 'react'
 import { Navbar,NavDropdown,Nav,Container} from 'react-bootstrap';
+import { BrowserRouter as  Rouer,Switch,Route, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import rbw from '../assets/img/rbw-01.png';
 import '../index.css';
@@ -9,18 +10,18 @@ import Cardwidget from './Cardwidget';
 
 const NavBar= ()=> {
     return (
-      
+      <div>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
   <Container>
-  <Navbar.Brand href="#home"><img src={rbw}></img></Navbar.Brand>
+  <Navbar.Brand href="/"><img src={rbw}></img></Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
       <Nav.Link href="#features">Productos</Nav.Link>
-      <Nav.Link href="#pricing">Precios</Nav.Link>
+      <Nav.Link href="#">Precios</Nav.Link>
       <NavDropdown title="Paquetes" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Paquete 1</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Paquete 2</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.1">Tes</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.2">Relajantes</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.3">Paquete 3</NavDropdown.Item>
         <NavDropdown.Divider />
      
@@ -36,7 +37,7 @@ const NavBar= ()=> {
   </Container>
 </Navbar>
 
-        
+      </div>  
     )
 }
 export default NavBar;

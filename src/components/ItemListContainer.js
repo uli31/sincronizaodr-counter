@@ -1,11 +1,26 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
+import '../index.css';
 import ItemCount from './ItemCount';
+import Prodcto from '../assets/data/prdoctos..json';
+import ItemList from './ItemList';
 
 
-const ItemListContainer=({mensaje})=> {
+const ItemListContainer=()=> {
+    const [productos, setProductos] = useState([]);
+    useEffect(()=>{
+        const conexion= new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve(Prodcto)
+            },1000)
+        })
+        conexion.then(datos=>setProductos(datos))
+        },[productos])
+
     return (
         <div>
-            <ItemCount/>
+          
+        <ItemList
+        productos={productos}/>
         </div>
     )
 }
