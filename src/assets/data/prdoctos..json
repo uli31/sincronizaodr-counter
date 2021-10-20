@@ -5,14 +5,15 @@
         "cantidad": 4,
         "descripcion": " Ayuda a controlar el peso Ayuda a mejorar la digestión",
          "url":"https://http2.mlstatic.com/D_NQ_NP_2X_689001-MLM47356520368_092021-F.webp"
-    },
+         ,"precio": 90
+        },
     {
         "id": 3,
         "nombre": "piñalim",
         "cantidad": 2,
         "descripcion": "lorem",
         "url":"https://http2.mlstatic.com/D_NQ_NP_2X_926746-MLM40358393450_012020-F.webp"
-
+        ,"precio": 90
     },
     {
         "id": 4,
@@ -20,7 +21,8 @@
         "cantidad": 8,
         "descripcion": "lorem",
         "url":"https://cdn.shopify.com/s/files/1/2266/9771/products/83-18.png?v=1589042313"
-
+        ,"precio": 90
+        
     },
     {
         "id": 5,
@@ -28,6 +30,7 @@
         "cantidad": 9,
         "descripcion": "lorem",
         "url":"https://http2.mlstatic.com/D_NQ_NP_2X_689001-MLM47356520368_092021-F.webp"
+        ,"precio": 90
 
     }
 ]

@@ -8,14 +8,18 @@ import { BrowserRouter as Router,
   Link} from 'react-router-dom';
 import ItemDescrib from "./components/ItemDescrib";
 import ItemaDetail from "./components/ItemaDetail";
+import CartContext from "./components/CartContext";
+import { DatoContext } from "./components/conText/DataContext";
 
 
 function App() {
 
   return (
   
-        <Router>
-    <div>
+    
+    <Router>
+    <DatoContext>
+      <div>
       <header>
         <NavBar />
         
@@ -34,9 +38,14 @@ function App() {
           <Route exact path="/ItemDescribs/:id">
             <ItemaDetail/>
           </Route>
+
+          <Route exact path="/Carrtito">
+            <CartContext/>
+          </Route>
         </Switch>
       </main>
     </div>
+    </DatoContext> 
     </Router>
     
     

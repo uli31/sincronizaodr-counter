@@ -1,9 +1,9 @@
 import React,{Fragment,useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css'
-import { Card,Button} from 'react-bootstrap';
-import swal from 'sweetalert2';
 
+import swal from 'sweetalert2';
+import { Card,Button} from 'react-bootstrap';
 
 const  ItemCount=({cantidad}) =>{
 
