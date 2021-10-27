@@ -10,7 +10,7 @@ import swal from 'sweetalert2';
 const ItemDescrib=({Producto})=>{
 
   // context
-        const {setCarrito,carrito}= useContext(DataContext);
+        const {agregarItem}= useContext(DataContext);
         
       
 
@@ -38,18 +38,18 @@ const ItemDescrib=({Producto})=>{
     }
     
 
-    const agregarCarrito= (carrito)=>{
+    const agregarCarrito= ()=>{
          //tomara los datos del producto
          setDatosCarrito({
           nombreProducto:`${nombre}`,
           urlimg:`${url}`,
-          cantidadStock:`${cantidad}`,
+          cantidadStock:`${cantidadPro}`,
           precioU:`${precio}`,
           key:id
          })
 
          // lo envia al carrito principla
-         setCarrito([datosCarrito]);
+         agregarItem(datosCarrito);
          
          
          // cambia el estado para que apresca el boton nuevo

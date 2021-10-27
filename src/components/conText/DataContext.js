@@ -7,9 +7,12 @@ export const DataContext  = createContext();
 export  const DatoContext=({children})=> {
         const data=[ ]
 
-    const [carrito,setCarrito]= useState(data)
+    const [carrito,setCarrito]= useState(data);
+    const agregarItem = (valor)=>{
+        setCarrito([...carrito,valor])
+    }
     return (
-        <DataContext.Provider value={carrito,setCarrito}>
+        <DataContext.Provider value={{carrito,agregarItem}}>
             {children}
         </DataContext.Provider>
     )

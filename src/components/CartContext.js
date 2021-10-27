@@ -24,9 +24,9 @@ return(
   {carrito.map(carro=>   
     
     <tr>
-      <td>{carro.urlimg}</td>
+      <td><img src={carro.urlimg}></img></td>
       <td>{carro.nombreProducto}</td>
-      <td>{carro.precioU}</td>
+      <td>{carro.cantidadStock}</td>
       
     </tr>)
  }
